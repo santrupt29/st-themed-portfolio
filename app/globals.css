@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --stranger-red: #db202c;
+  --crt-scanline: rgba(18, 16, 16, 0.1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* THE CRT EFFECT (Makes it look like an old TV) */
+body::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 999;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Subtle screen flicker animation */
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  5% { opacity: 0.95; }
+  10% { opacity: 0.9; }
+  15% { opacity: 0.95; }
+  20% { opacity: 0.99; }
+  50% { opacity: 0.95; }
+  100% { opacity: 0.98; }
+}
+
+.light-theme {
+  background-color: #fdf6e3;
+  color: #1a1a1a;
+  animation: none; /* Stable in normal mode */
+}
+
+.upside-down-theme {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--stranger-red);
+  min-height: 100vh;
+  animation: flicker 0.15s infinite; /* Flicker in upside down */
+}
+
+/* TEXT STYLES */
+.text-glow {
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #990000;
+}
+
+.text-outline {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+}
+
+.font-horror {
+  font-family: var(--font-creepster), cursive;
+  letter-spacing: 0.1em;
+}
+
+.font-terminal {
+  font-family: var(--font-vt323), monospace;
+}
+
+/* Custom Scrollbar for Terminal */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+::-webkit-scrollbar-thumb {
+  background: #db202c; 
 }
