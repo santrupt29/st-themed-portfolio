@@ -1,9 +1,10 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 const skills = [
   { name: "Fullstack (Next.js)", stat: "INT", value: 17, desc: "End-to-end web applications" },
-  { name: "Backend (Node/Express)", stat: "STR", value: 18, desc: "Robust server-side logic" },
+  { name: "Backend (Java Spring Boot/Express)", stat: "STR", value: 18, desc: "Robust server-side logic" },
   { name: "Deployment and tools (Vercel/Git)", stat: "WIS", value: 18, desc: "Perceiving and streamlining production cycles" },
   { name: "Problem Solving (DSA)", stat: "CON", value: 16, desc: "Enduring complex logical and algorithmic puzzles" },
 ];
