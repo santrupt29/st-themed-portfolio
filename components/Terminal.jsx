@@ -13,7 +13,7 @@ export default function Terminal({ isUpsideDown }) {
   const [logs, setLogs] = useState([
     "--- HAWKINS_NET TERMINAL v4.1 ---",
     "SYSTEM: INITIALIZING...",
-    "LOADING SUBJECT: ELEVEN",
+    "LOADING SUBJECT: SANTRUPT",
     "WARNING: GATE STABILITY CRITICAL",
     "AUTH_REQUIRED. TYPE 'HELP' FOR LIST.",
     "---------------------------------"

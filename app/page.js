@@ -18,6 +18,19 @@ const MonsterScene = dynamic(() => import('../components/MonsterScene'), {
 const allProjects = [
   {
     id: "01",
+    title: "Vortex - Video Streaming Platform",
+    tech: ["Java 21", "Spring Boot 3.5", "PostgreSQL", "FFmpeg", "DO Spaces/AWS S3", "Spring Security", "Next.js"],
+    desc: "A robust streaming ecosystem capable of real-time transcoding, adaptive bitrate delivery, and low-latency global distribution for a seamless viewing experience.",
+    stats: [
+      { label: "TRANSCODE_EFFICIENCY", value: "HLS/TS" },
+      { label: "JAVA_VERSION", value: "21" },
+      { label: "STREAM_PROTOCOL", value: "M3U8" }
+    ],
+    github: "https://github.com/santrupt29/stream-spring-backend",
+    live: "https://vortexhq.vercel.app/",
+  },
+  {
+    id: "02",
     title: "HireLyze - AI-powered hiring and talent analytics platform",
     tech: ["React.js", "Express.js", "Supabase", "ioredis", "Google GenAI"],
     desc: "An intelligent platform leveraging AI to screen, analyze, and match talent seamlessly with job postings, enhancing recruitment processes end-to-end.",
@@ -30,7 +43,7 @@ const allProjects = [
     live: "https://hirelyzehq.vercel.app/",
   },
   {
-    id: "02",
+    id: "03",
     title: "Evento - AI-powered event management SaaS",
     tech: ["Next.js", "Convex", "Clerk", "shadcn/ui", "Google GenAI"],
     desc: "A full-stack SaaS platform for discovering, creating, and managing events, where AI helps organizers generate event descriptions and categories from a simple prompt while app handles onboarding, ticketing with QR codes, subscriptions, and analytics.",
@@ -43,7 +56,7 @@ const allProjects = [
     live: "https://eventohq.vercel.app/",
   },
   {
-    id: "03",
+    id: "04",
     title: "PC Forge - Custom PC Builder",
     tech: ["React.js", "Express.js", "MongoDB", "Google GenAI"],
     desc: "A full stack web app for custom PC building with compatibility checking of all parts.",
@@ -56,7 +69,7 @@ const allProjects = [
     live: "https://the-pc-forge.vercel.app",
   },
   {
-    id: "04",
+    id: "05",
     title: "Zync- Real-time team collaboration platform",
     tech: ["React.js", "Express.js", "MongoDB", "Stream Chat", "Clerk", "Inngest"],
     desc: "A full stack web app for custom PC building with compatibility checking of all parts.",
