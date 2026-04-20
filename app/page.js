@@ -137,10 +137,10 @@ export default function Home() {
             ? "text-red-600 font-horror drop-shadow-[0_0_15px_rgba(220,38,38,0.8)]"
             : "text-black text-outline hover:text-red-600"
             }`}>
-            <GlitchText isUpsideDown={isUpsideDown}>I BUILD</GlitchText>
+            <GlitchText isUpsideDown={isUpsideDown}>I ARCHITECT</GlitchText>
             <br />
             <span className={`block pl-10 md:pl-20 ${isUpsideDown ? "text-red-500" : ""}`}>
-              <GlitchText isUpsideDown={isUpsideDown}>WORLDS.</GlitchText>
+              <GlitchText isUpsideDown={isUpsideDown}>THE INVISIBLE.</GlitchText>
             </span>
           </h2>
 
@@ -148,7 +148,7 @@ export default function Home() {
             }`}>
             Subject: PORTFOLIO_01 <br />
             Status: <span className={isUpsideDown ? "text-red-500 animate-pulse" : "text-green-600"}>ACTIVE</span><br />
-            {isUpsideDown ? "The connection is unstable..." : "Engineering full-stack web applications."}
+            {isUpsideDown ? "The connection is unstable..." : "Engineering high-performance distributed systems."}
           </div>
           <div className="flex flex-wrap gap-4 mt-8">
             <a
