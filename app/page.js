@@ -5,6 +5,7 @@ import { useTheme } from "../context/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from 'next/dynamic';
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 import LabDashboard from "../components/LabDashboard";
 import Terminal from "../components/Terminal";
 import AlphabetWall from "../components/AlphabetWall";
@@ -178,6 +179,8 @@ export default function Home() {
 
         </motion.div>
 
+        {/* FIELD DEPLOYMENTS / EXPERIENCE SECTION */}
+        <Experience isUpsideDown={isUpsideDown} />
         {/* INTEGRATED PROJECTS SECTION */}
         <section className="mb-32 relative">
           <h3 className="text-xl font-mono tracking-[0.5em] mb-12 opacity-60 uppercase flex items-center font-terminal">

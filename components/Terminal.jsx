@@ -36,13 +36,14 @@ export default function Terminal({ isUpsideDown }) {
       case "help":
         newLogs.push(
           "AVAILABLE COMMANDS:",
-          "  [HELLO]   - INITIALIZE GREETING",
-          "  [ABOUT]   - VIEW PERSONNEL BIO",
-          "  [RESUME]  - DOWNLOAD DATA_FILE",
-          "  [CONTACT] - REVEAL COORDINATES",
+          "  [HELLO]      - INITIALIZE GREETING",
+          "  [ABOUT]      - VIEW PERSONNEL BIO",
+          "  [EXPERIENCE] - VIEW FIELD DEPLOYMENTS",
+          "  [RESUME]     - DOWNLOAD DATA_FILE",
+          "  [CONTACT]    - REVEAL COORDINATES",
           "  [ONE LAST TIME] - FINAL SEQUENCE",
           "  [ENTER VOID] - UNLOCK THE GATE",
-          "  [CLEAR]   - WIPE TERMINAL BUFFER"
+          "  [CLEAR]      - WIPE TERMINAL BUFFER"
         );
         break;
       case "enter void":
@@ -68,6 +69,26 @@ export default function Terminal({ isUpsideDown }) {
         break;
       case "about":
         newLogs.push("SYSTEM: LOADING SUBJECT_BIO... BACKEND DEVELOPER.");
+        break;
+      case "experience":
+      case "internship":
+      case "deployments":
+      case "swastik":
+        newLogs.push(
+          "SYSTEM: ACCESSING ARCHIVED FIELD_LOGS...",
+          "==================================================",
+          "FIELD MISSION: SWASTIK SOFTWARE TECHNOLOGIES [MUMBAI, IN]",
+          "ROLE: SOFTWARE DEVELOPMENT ENGINEER INTERN (MAY 2026 - JUL 2026)",
+          "STATUS: DEPLOYMENT COMPLETE // PRODUCTION VERIFIED",
+          "--------------------------------------------------",
+          "KEY OPERATIONS:",
+          "  [01] LangGraph AI agent handling 11 care-ops workflows & 3-role RBAC",
+          "  [02] 3-tier LLM routing with timing instrumentation (0 prod 502s)",
+          "  [03] Spring Boot @Transactional batches for 25-occurrence shift series",
+          "  [04] 5-table cross-service MySQL observability & Metabase dashboards",
+          "TECH: Java, Spring Boot, Python, LangGraph, MySQL, aiomysql, Metabase",
+          "=================================================="
+        );
         break;
       case "resume":
         newLogs.push("SYSTEM: DOWNLOAD INITIATED. CHECKING BROWSER DOWNLOADS...");
