@@ -39,6 +39,7 @@ export default function Terminal({ isUpsideDown }) {
           "  [HELLO]      - INITIALIZE GREETING",
           "  [ABOUT]      - VIEW PERSONNEL BIO",
           "  [EXPERIENCE] - VIEW FIELD DEPLOYMENTS",
+          "  [LOR]        - VIEW RECOMMENDATION LETTER",
           "  [RESUME]     - DOWNLOAD DATA_FILE",
           "  [CONTACT]    - REVEAL COORDINATES",
           "  [ONE LAST TIME] - FINAL SEQUENCE",
@@ -93,6 +94,15 @@ export default function Terminal({ isUpsideDown }) {
       case "resume":
         newLogs.push("SYSTEM: DOWNLOAD INITIATED. CHECKING BROWSER DOWNLOADS...");
         window.open("/Santrupt_Resume_VJTI.pdf", "_blank");
+        break;
+      case "lor":
+      case "recommendation":
+        newLogs.push(
+          "SYSTEM: ACCESSING VERIFIED RECOMMENDATION LETTER...",
+          "ISSUER: SWASTIK SOFTWARE TECHNOLOGIES [RUSHIL SANGHAVI, FOUNDER]",
+          "OPENING DOCUMENT IN NEW TAB..."
+        );
+        window.open("/LOR.pdf", "_blank");
         break;
       case "contact":
         newLogs.push("SYSTEM: ENCRYPTED LINK DETECTED: [santrupt.potphode29@gmail.com]");

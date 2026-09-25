@@ -171,6 +171,23 @@ export default function Experience({ isUpsideDown }) {
                   </span>
                 ))}
               </div>
+
+              {/* Documentation / Verification Link */}
+              <div className="flex gap-4 mt-6 pt-4 border-t border-current/10">
+                <a
+                  href="/LOR.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`px-4 py-2 font-terminal text-sm uppercase border transition-all duration-300 flex items-center gap-2 ${
+                    isUpsideDown
+                      ? "border-red-900 text-red-500 hover:bg-red-900 hover:border-red-500 hover:text-white hover:shadow-[0_0_15px_rgba(220,38,38,0.5)]"
+                      : "border-black text-black hover:bg-black hover:text-[#fdf6e3]"
+                  }`}
+                >
+                  <span>👁</span>
+                  [ VIEW_LOR ]
+                </a>
+              </div>
             </div>
           </motion.div>
         ))}
