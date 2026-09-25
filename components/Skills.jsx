@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const skills = [
   { name: "Backend (Java Spring Boot/Express)", stat: "STR", value: 18, desc: "Robust server-side logic" },
   { name: "Frontend (React.js)", stat: "INT", value: 17, desc: "Client-Side State Management and UI Architecture" },
-  { name: "Fullstack (Next.js)", stat: "INT", value: 17, desc: "End-to-end web applications" },
   { name: "Deployment and tools (Vercel/Git/DO Spaces/AWS S3)", stat: "WIS", value: 18, desc: "Perceiving and streamlining production cycles" },
   { name: "Problem Solving (DSA)", stat: "CON", value: 16, desc: "Enduring complex logical and algorithmic puzzles" },
 ];

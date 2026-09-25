@@ -67,7 +67,7 @@ export default function Terminal({ isUpsideDown }) {
         newLogs.push("SYSTEM: GREETINGS. DATA PACKETS ARE ROUTING... ACCESS GRANTED.");
         break;
       case "about":
-        newLogs.push("SYSTEM: LOADING SUBJECT_BIO... FULL STACK DEVELOPER.");
+        newLogs.push("SYSTEM: LOADING SUBJECT_BIO... BACKEND DEVELOPER.");
         break;
       case "resume":
         newLogs.push("SYSTEM: DOWNLOAD INITIATED. CHECKING BROWSER DOWNLOADS...");
